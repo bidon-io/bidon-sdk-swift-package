@@ -26,7 +26,7 @@ jobs:
       - name: Extract version and create tag
         if: steps.changed.outputs.package_changed != '0'
         run: |
-          VERSION=$(grep -oE '[0-9]+\.[0-9]+\.[0-9]+-spm\.[0-9]+' Package.swift | head -1)
+          VERSION=$(grep -oP 'bidon-ios/SPM/Bidon/\K[^/]+(?=/Bidon\.xcframework\.zip)' Package.swift | head -1)
           if [ -z "$VERSION" ]; then
             echo "Could not extract version from Package.swift"
             exit 1
