@@ -10,8 +10,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Bidon",
-            url: "https://s3-eu-central-1.amazonaws.com/bidon-ios/SPM/Bidon/0.14.13/Bidon.xcframework.zip",
-            checksum: "732177447941fe1ac01a21e720584940b06b4915c47a444664e1592886b3aeec"
+            url: "https://s3-eu-central-1.amazonaws.com/bidon-ios/SPM/Bidon/0.14.14/Bidon.xcframework.zip",
+            checksum: "b6ef84c90fc63e30668375fb8c457c7d917ece441651c0747f9a7726ffd68ba4"
         )
     ]
 )
